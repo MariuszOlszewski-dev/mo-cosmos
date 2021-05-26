@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/mo-cosmos/static/css/main.c0f45f43.chunk.css",
+    "main.js": "/mo-cosmos/static/js/main.9310c9a9.chunk.js",
+    "main.js.map": "/mo-cosmos/static/js/main.9310c9a9.chunk.js.map",
+    "runtime-main.js": "/mo-cosmos/static/js/runtime-main.80f22ae5.js",
+    "runtime-main.js.map": "/mo-cosmos/static/js/runtime-main.80f22ae5.js.map",
+    "static/js/2.6c4b1dc2.chunk.js": "/mo-cosmos/static/js/2.6c4b1dc2.chunk.js",
+    "static/js/2.6c4b1dc2.chunk.js.map": "/mo-cosmos/static/js/2.6c4b1dc2.chunk.js.map",
+    "index.html": "/mo-cosmos/index.html",
+    "static/css/main.c0f45f43.chunk.css.map": "/mo-cosmos/static/css/main.c0f45f43.chunk.css.map",
+    "static/js/2.6c4b1dc2.chunk.js.LICENSE.txt": "/mo-cosmos/static/js/2.6c4b1dc2.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/mo-cosmos/static/media/Planet.c40b13ca.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80f22ae5.js",
+    "static/js/2.6c4b1dc2.chunk.js",
+    "static/css/main.c0f45f43.chunk.css",
+    "static/js/main.9310c9a9.chunk.js"
+  ]
+}
