@@ -39,7 +39,7 @@ function App() {
         >
         Lunch rocket</button>
       </div>
-      <div className="footer"><span className="leftFooter">Copyright © Usertive & SpaceX API</span><span className="rightFooter">Recruiment Task / Summer 2021</span></div>
+      <div className="footer"><span className="leftFooter">Copyright © Usertive & SpaceX API</span><span className="rightFooter">Summer 2021</span></div>
     </div>
 
   );
