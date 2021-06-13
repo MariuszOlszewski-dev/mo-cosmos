@@ -1,0 +1,582 @@
+html {
+  font-size: 16px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("./Pic/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+button {
+  color: #ffffff;
+  background: #7860d7;
+  border: none;
+  cursor: pointer;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.leftPage {
+  width: 49%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.title {
+  margin: 1rem 1rem 1rem 5rem;
+  width: 100%;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.titleVector1 {
+  display: block;
+  background-image: url("./Pic/titleVector1.jpg");
+  width: 116px;
+  height: 24px;
+}
+
+.titleVector2 {
+  display: block;
+  background-image: url("./Pic/titleVector2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 6px;
+  height: 7px;
+  position: absolute;
+  top: 6px;
+}
+
+.first {
+  background: linear-gradient(360deg, #2b224a 0%, rgba(43, 34, 74, 0) 100%),
+    url("./Pic/Image\ 4.jpg");
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  justify-self: end;
+}
+
+.second {
+  background: linear-gradient(360deg, #2b224a 0%, rgba(43, 34, 74, 0) 100%),
+    url("./Pic/Image\ 1.jpg");
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.third {
+  background: linear-gradient(360deg, #2b224a 0%, rgba(43, 34, 74, 0) 100%),
+    url("./Pic/Image\ 2.jpg");
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  justify-self: end;
+}
+
+.fourth {
+  background: linear-gradient(360deg, #2b224a 0%, rgba(43, 34, 74, 0) 100%),
+    url("./Pic/Image\ 3.jpg");
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.modal {
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2b224a;
+  border: 1px solid #342957;
+  box-sizing: border-box;
+  box-shadow: 0px 12px 32px rgba(22, 13, 49, 0.4);
+  border-radius: 16px;
+  z-index: 100;
+}
+
+ul {
+  list-style: none;
+  margin: 1rem;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+}
+
+ul li span {
+  width: 50%;
+  position: relative;
+  line-height: 40px;
+}
+
+.scroll {
+  height: 200px;
+  overflow-y: scroll;
+  padding-left: 1rem;
+  color: #d2cbe9;
+  scrollbar-width: thin;
+}
+
+.scroll li {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.tile {
+  position: relative;
+  width: 160px;
+  height: 208px;
+  margin: 1rem;
+  border-radius: 16px;
+}
+
+.tile:hover::after {
+  content: "Details";
+  position: absolute;
+  display: block;
+  text-align: center;
+  padding-top: 60%;
+  width: 160px;
+  height: 110px;
+  bottom: 50%;
+  top: 0%;
+  background-color: rgba(43, 34, 74, 0.92);
+  opacity: 0.8;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.tile:hover span {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.leftFooter {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #8d7fbc;
+  margin-left: 5rem;
+  font-family: Inter;
+}
+
+.rightFooter {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #8d7fbc;
+  margin-right: 5rem;
+}
+
+.capsules {
+  position: absolute;
+  display: block;
+  width: 160px;
+  text-align: center;
+  bottom: 10%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.crew {
+  position: absolute;
+  display: block;
+  width: 160px;
+  text-align: center;
+  bottom: 10%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.rockets {
+  position: absolute;
+  display: block;
+  width: 160px;
+  text-align: center;
+  bottom: 10%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.starlink {
+  position: absolute;
+  display: block;
+  width: 160px;
+  text-align: center;
+  bottom: 10%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.closeModal {
+  position: absolute;
+  right: 0%;
+  color: #c3b8e8;
+  background-color: #2b224a;
+  background-image: url("./Pic/Close.jpg");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  margin: 1rem;
+  z-index: 1;
+  font-size: 1.2rem;
+}
+
+.modalTitle {
+  margin: 1rem;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.modalView {
+  position: relative;
+  top: 5%;
+}
+
+.dataTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 48%;
+  padding-left: 1rem;
+}
+
+.dataTitle:hover {
+  background-color: #251d42;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sortStatus {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.nav {
+  color: #a094c6;
+  background: #342a56;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.dataTitle .arrowsHide {
+  visibility: hidden;
+}
+
+.dataTitle:hover .arrowsHide {
+  visibility: visible;
+}
+
+.liBlur {
+  position: absolute;
+  bottom: 0%;
+  width: 450px;
+  height: 40px;
+  margin-left: 1rem;
+  background: linear-gradient(180deg, rgba(43, 34, 74, 0) 0%, #2b224a 100%);
+}
+
+.spinner {
+  font-size: 2rem;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  font-size: 1.5rem;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #221a3c;
+  border-radius: 8px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #53477d;
+  border-radius: 8px;
+}
+
+.rightPage {
+  width: 49%;
+  height: 80vh;
+  position: relative;
+}
+
+.planet {
+  background-image: url("./Pic/Planet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 375px;
+  height: 372px;
+  position: absolute;
+  top: 50px;
+  left: 80px;
+}
+
+.cloudLeft {
+  background-image: url("./Pic/CloudLeft.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 65px;
+  height: 62px;
+  position: absolute;
+  top: 60px;
+  left: 175px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.cloudRight {
+  background-image: url("./Pic/CloudRight.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 52px;
+  height: 50px;
+  position: absolute;
+  top: 70px;
+  left: 310px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.rocket {
+  background-image: url("./Pic/Rocket.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 102px;
+  height: 140px;
+  position: absolute;
+  top: -20px;
+  left: 225px;
+  z-index: 2;
+}
+
+.anim {
+  animation: anim 20s linear;
+}
+
+@keyframes anim {
+  0% {
+    top: -20px;
+  }
+  7% {
+    top: -40px;
+  }
+  10% {
+    top: -85px;
+    left: 225px;
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  15% {
+    top: -85px;
+    left: 100px;
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+  20% {
+    top: -80px;
+    left: -100px;
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+  25% {
+    top: -80px;
+    left: -150px;
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+  }
+  30% {
+    top: 150px;
+    left: -150px;
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+  }
+  40% {
+    top: 210px;
+    left: -100px;
+    -moz-transform: rotate(-270deg);
+    -webkit-transform: rotate(-270deg);
+  }
+  53% {
+    top: 210px;
+    left: 50px;
+    -moz-transform: rotate(-270deg);
+    -webkit-transform: rotate(-270deg);
+    opacity: 1;
+    z-index: 1;
+  }
+  55% {
+    top: 210px;
+    left: 200px;
+    -moz-transform: rotate(-270deg);
+    -webkit-transform: rotate(-270deg);
+    opacity: 0;
+  }
+  60% {
+    top: 210px;
+    left: 480px;
+    -moz-transform: rotate(-270deg);
+    -webkit-transform: rotate(-270deg);
+    z-index: -1;
+    opacity: 1;
+  }
+  65% {
+    top: 210px;
+    left: 500px;
+    -moz-transform: rotate(-270deg);
+    -webkit-transform: rotate(-270deg);
+  }
+  70% {
+    top: 100px;
+    left: 500px;
+    -moz-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+  75% {
+    top: -80px;
+    left: 500px;
+    -moz-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+  80% {
+    top: -80px;
+    left: 400px;
+    -moz-transform: rotate(-450deg);
+    -webkit-transform: rotate(-450deg);
+  }
+  85% {
+    top: -90px;
+    left: 225px;
+    -moz-transform: rotate(-450deg);
+    -webkit-transform: rotate(-450deg);
+  }
+  90% {
+    top: -90px;
+    left: 225px;
+    -moz-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+  95% {
+    top: -20px;
+    left: 225px;
+    -moz-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+  100% {
+    top: -20px;
+    left: 225px;
+    -moz-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+.anim2 {
+  animation: anim2 20s linear;
+}
+
+@keyframes anim2 {
+  5% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.landing {
+  background-image: url("./Pic/Landing\ gear.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 68px;
+  height: 23px;
+  position: absolute;
+  top: 105px;
+  left: 242px;
+  z-index: 1;
+}
+
+.startRocket {
+  color: #ffffff;
+  background: #7860d7;
+  border: none;
+  cursor: pointer;
+  width: 184px;
+  height: 48px;
+  border-radius: 8px;
+  position: absolute;
+  top: 440px;
+  left: 170px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.startRocket:hover {
+  color: #ffffff;
+  background: #05c9b7;
+  border: none;
+  border-radius: 8px;
+}
