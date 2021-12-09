@@ -50,8 +50,8 @@ function App() {
         </button>
       </div>
       <div className="footer">
-        <span className="leftFooter">Copyright © Usertive & SpaceX API</span>
-        <span className="rightFooter">Recruiment Task / Summer 2021</span>
+        <span className="leftFooter">Copyright © SpaceX API</span>
+        <span className="rightFooter"> Summer 2021</span>
       </div>
     </div>
   );
