@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="App">
       <div className="title">
-        {" "}
-        <span className="titleVector1"></span>{" "}
-        <span className="titleVector2"></span>
+//         {" "}
+//         <span className="titleVector1"></span>{" "}
+//         <span className="titleVector2"></span>
       </div>
       <div className="leftPage">
         <Tiles setModalVisible={setModalVisible} />
